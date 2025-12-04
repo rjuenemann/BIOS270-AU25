@@ -7,7 +7,7 @@ process MMSEQS2 {
         tuple val(sample), path(faaassembly)
 
     output:
-        path "*"
+        path("${sample}_prot90_cluster.tsv")
 
     script:
         """
