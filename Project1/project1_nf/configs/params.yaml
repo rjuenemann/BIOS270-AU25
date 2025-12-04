@@ -1,0 +1,3 @@
+#-------------------- Params --------------------
+outdir: '/farmshare/user_data/rjuene/repos/BIOS270-AU25/Project1/project1_nf/data/'
+samplesheet: "/farmshare/user_data/rjuene/repos/BIOS270-AU25/Project1/project1_nf/samplesheet.csv"
