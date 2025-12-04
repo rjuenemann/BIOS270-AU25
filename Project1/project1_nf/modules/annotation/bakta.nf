@@ -7,7 +7,7 @@ process BAKTA {
         tuple val(sample), path(assembly)
 
     output:
-        path "*"
+        tuple val(sample), path("assembly.faa")
 
     script:
         """
