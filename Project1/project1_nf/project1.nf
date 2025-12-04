@@ -4,6 +4,7 @@
 nextflow.enable.dsl=2
 
 include { FLYE } from './modules/assembly/flye.nf'
+include { BAKTA } from './modules/annotation/bakta.nf'
 
 // -------------------- Channels --------------------
 def samplesheet_ch = Channel
@@ -18,7 +19,8 @@ samples_ch = samplesheet_ch.splitCsv(header:true).map { row ->
 // -------------------- Workflow --------------------
 
 workflow {
-    FLYE(samples_ch)
+    assembly_ch = FLYE(samples_ch)
+    BAKTA(assembly_ch)
 }
 workflow.onComplete {
     log.info "Pipeline finished. Results in: ${params.outdir}"

@@ -7,8 +7,7 @@ process FLYE {
       tuple val(sample), path(reads)
 
     output:
-      path "assembly.fasta"
-      path "*"
+      tuple val(sample), path("assembly.fasta")
 
     script:
       """
@@ -18,4 +17,3 @@ process FLYE {
         --threads 32
       """
 }
-
