@@ -7,7 +7,7 @@
 ---
 
 ## Top E.coli Paralogs
-![ecoli](ecoli_top_paralogs.png)
+![ecoli](images/ecoli_top_paralogs.png)
 
 ## Top K.Pneumoniae Paralogs
-![kpneumoniae](kpneumoniae_top_paralogs.png)
+![kpneumoniae](images/kpneumoniae_top_paralogs.png)
